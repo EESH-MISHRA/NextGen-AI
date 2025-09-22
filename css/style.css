@@ -1,8 +1,37 @@
 *{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
 }
 html {
   scroll-behavior: smooth;
+  
+}
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999; /* <-- CHANGE THIS to a much higher value */
+  transition: opacity 0.7s ease-out;
+}
+.custom-loader {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: 
+    radial-gradient(farthest-side,#766DF4 94%,#0000) top/8px 8px no-repeat,
+    conic-gradient(#0000 30%,#766DF4);
+  -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+  animation:s3 1s infinite linear;
+}
+
+@keyframes s3{ 
+  100%{transform: rotate(1turn)}
 }
 body {
             font-family: 'Inter', sans-serif;
@@ -13,6 +42,7 @@ body {
                 linear-gradient(to bottom, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
             background-size: 3rem 3rem; 
         }
+
 .container{
     border: 1px solid white;
     margin-inline: 1rem;
@@ -237,4 +267,8 @@ form button{
     color: white;
     font-size: medium;
     font-weight: 100;
+}
+.pannel_2
+{
+    margin-top: 4rem;
 }

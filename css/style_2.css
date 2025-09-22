@@ -17,23 +17,31 @@
         width: 25rem;
         top: -5rem;
     }
-    
-    .main_2, .main_4 {
+
+    .main_2,
+    .main_4 {
         gap: 2rem;
         align-items: center; /* Vertically align items */
     }
 
-    .content, .card, .content_box_2, .card_2 {
+    .content,
+    .card,
+    .content_box_2,
+    .card_2 {
         margin: 5vh 2rem; /* Adjust margins */
     }
 
-    .content h1, .content_box_2 h1 {
+    .content h1,
+    .content_box_2 h1 {
         font-size: 1.5rem; /* Slightly smaller headings */
     }
 }
 
 /* --- Mobile Styles (Up to 767px) --- */
 @media (max-width: 767px) {
+    *{
+        overflow-x: hidden;
+    }
     /* --- General Body & Container --- */
     .container {
         height: auto; /* Allow container to grow with content */
@@ -41,7 +49,7 @@
         padding-bottom: 4rem;
         border: none; /* Often better to remove container borders on mobile */
     }
-    
+
     /* --- Navigation --- */
     nav {
         flex-direction: column; /* Stack nav items vertically */
@@ -60,8 +68,9 @@
     nav ul a{
         color: white;
         border: 1px solid white;
+        border-radius: 2rem;
+        
     }
-
     /* --- Main Hero Section --- */
     .main {
         flex-direction: column-reverse; /* Show model first, then text */
@@ -114,7 +123,7 @@
     }
 
     /* --- Content Sections (main_2, main_4) --- */
-    .main_2, .main_4 {
+    .main_2,.main_4 {
         flex-direction: column; /* Stack content vertically */
         margin-inline: 1rem;
         height: auto; /* Adjust height */
@@ -122,33 +131,38 @@
         text-align: center;
     }
 
-    .content, .content_box_2 {
+    .content,
+    .content_box_2 {
         margin: 0; /* Reset margins for stacked layout */
     }
-    
-    .card, .card_2 {
-        margin: 2rem auto 0 auto; /* Center the images below content */
+    .content_box_3
+    {
+        margin-top: 0;
     }
 
-    .card img, .card_2 img {
-        max-width: 17rem;
-        max-height: 15rem; /* Optional: Limit max width on small screens */
-        height: auto;
+    .line_graph{
+        max-width: 20rem;
+        max-height: 15rem;
     }
-    
+    .pie_chart
+    {
+       max-width: 18rem;
+        max-height: 15rem; 
+    }
+    .bar_graph
+    {
+        max-width: 20rem;
+        max-height: 15rem; 
+    }
     .main_4 {
         border-width: 1px;
     }
 
     .content_box_2 {
-       margin-top: 0;
-       margin-inline: 0;
-    }
-    .content_box_3{
         margin-top: 0;
-       margin-inline: 0;
+        margin-inline: 0;
     }
-    
+
     /* --- Bullet Points Section --- */
     .bullet ul {
         padding-left: 0; /* Remove default list padding */
@@ -165,7 +179,7 @@
     .bullet ul li p {
         margin-top: 0.5rem;
     }
-    
+
     /* --- Platform Section --- */
     .main_3 {
         text-align: center;
@@ -188,10 +202,17 @@
         gap: 1rem;
         width: 100%;
     }
-    
+
     .end h1 {
         font-size: small;
         padding: 0 1rem;
         text-align: center;
     }
+    .pannel_2 img{
+        margin-top: 0;
+    }
+    form input{
+        text-align: center;
+    }
 }
+

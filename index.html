@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style2.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_2.css">
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
+    <div id="preloader">
+    <div class="custom-loader"></div>
+    </div>
     <div class="container">
         <nav>
             <h1>NEXTGEN-AI</h1>
@@ -65,7 +69,7 @@
              </p>
         </div>
         <div class="card_2">
-        <img src="./assets/pie_chart.png" alt="" style="width: 25rem;height: 18rem; border-radius: 2rem;">
+        <img src="./assets/pie_chart.png" alt="" style="width: 25rem;height: 18rem; border-radius: 2rem;" class="pie_chart">
         </div>
     </div>
     <!-- card-2 -->
@@ -78,7 +82,7 @@
             </p>
         </div>
         <div class="card_2">
-        <img src="./assets/bar_graph.png" alt="" style="width: 25rem;height: 18rem; border-radius: 2rem;">
+        <img src="./assets/bar_graph.png" alt="" style="width: 25rem;height: 18rem; border-radius: 2rem;" class="bar_graph">
         </div>
     </div>
     <footer>
@@ -91,7 +95,7 @@
                 </form>
             </div>
             <div class="pannel_2">
-            <h1>hello</h1>
+            <img src="./assets/insta_logo.png" alt="">
             </div>
         </div>
     <div class="end">
@@ -111,13 +115,20 @@
     });
 
     ScrollReveal().reveal('nav',{delay: 0 , origin: 'top'});
-    ScrollReveal().reveal('.head',{delay: 0 , origin: 'left'});
+    ScrollReveal().reveal('.head h1',{delay: 0 , origin: 'left'});
+    ScrollReveal().reveal('.head h2',{delay: 0.5,origin: 'left'});
+    ScrollReveal().reveal('.head h3',{delay: 0.15,origin: 'left'});
+    ScrollReveal().reveal('.buttons',{delay: 0.5,origin: 'left'});
     ScrollReveal().reveal('.content',{delay: 0 , origin: 'left'});
     // ScrollReveal().reveal('h1',{delay: 0 , origin: 'left'});
     ScrollReveal().reveal('.li h1 h2 h3',{delay: 0 , origin: 'left'});
     ScrollReveal().reveal('.card',{delay: 0 , origin: 'right'});
     ScrollReveal().reveal('.card_2',{delay: 0 , origin: 'right'});
     ScrollReveal().reveal('.container_box_2',{delay: 0.5 , origin: 'left'});
+    ScrollReveal().reveal('.main_3',{delay: 0.5,origin: 'left'});
+    ScrollReveal().reveal('.content_box_2',{delay: 0.5,origin: 'left'});
+    ScrollReveal().reveal('.content_box_3',{delay: 0.5,origin: 'left'});
+    ScrollReveal().reveal('.head h2',{delay: 0.5,origin: 'left'});
     ScrollReveal().reveal('.model',{delay: 0.5,origin: 'right'});
     // ScrollReveal().reveal('p',{delay: 0.5 , origin: 'left'});
     </script>
