@@ -11,7 +11,7 @@
         padding-left: 2rem; /* Add some padding */
     }
 
-    .globe {
+    .robot {
         right: 2rem; /* Bring model closer to the edge */
         height: 25rem;
         width: 25rem;
@@ -113,13 +113,13 @@
     }
 
     /* --- Model Viewer --- */
-    .globe {
+    .robot {
         position: relative; /* Change from absolute to relative for mobile flow */
         top: 0;
         right: 0;
         height: 300px;
         width: 100%; /* Make it full width of its container */
-        margin-top: 2rem;
+        margin-top: -1rem;
     }
 
     /* --- Content Sections (main_2, main_4) --- */
