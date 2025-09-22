@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style2.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h1>NEXTGEN-AI</h1>
+            <ul>
+                <a href="" style="padding-inline: 2rem">Products</a>
+                <a href="" style="padding-inline: 2rem">features</a>
+                <a href="" style="padding-inline: 2rem">Price</a>
+                <a href="" style="padding-inline: 2rem">About Us</a>
+            </ul>
+            <h2><a href="">GET STARTED</a></h2>
+        </nav>
+        <div class="main">
+            <div class="head">
+                <h1>INTRODUCING</h1>
+                <h2>AI That Understands</h2>
+                <h3>Not Just Commands.</h3>
+                <div class="buttons">
+                    <button>Documentation</button>
+                    <button style="background-color: white; color: black;">GET STARTED</button>
+                </div>
+            </div>
+            <div class="model">
+                <model-viewer src="./assets/robot_playground.glb" class="globe" autoplay disable-zoom></model-viewer>
+            </div>
+        </div>
+    </div>
+    <div class="main_2">
+        <div class="content">
+            <h1>Transforming Every Industry with <br> Smarter Al Solutions</h1>
+            <p>From retail to healthcare, our Al adapts to diverse industries-helping<br>businesses scale smarter, faster, and with precision.</p>
+            <div class="bullet">
+            <ul>
+                <li><h1 style="color:black;background-color: white; border-radius: 2rem; font-size:1.25rem; padding-inline: 1rem;">Retail</h1><p>Personalized Costumer Experience</p></li>
+                <li><h1 style="color:black;background-color: white; border-radius: 2rem; font-size:1.25rem; padding-inline: 1rem;">Finance</h1>Fraud Detection and Smart Detection</li>
+                <li><h1 style="color:black;background-color: white; border-radius: 2rem; font-size:1.25rem; padding-inline: 1rem;">healthcare</h1><p>Faster Diagnosis & workglow effeciency</p></li>
+            </ul>
+            </div>
+        </div>
+        <div class="card">
+        <img src="./assets/line_graph.png" alt="" style="width: 30rem;height: 22rem; border-radius: 2rem;" class="line_graph">
+        </div>
+    </div>
+    <div class="main_3">
+        <h1>One Platform</h1>
+        <h2>Endless Possibilities</h2>
+        <p>AI powered features design to adapt your work flow</p>
+    </div>
+    <!-- card-1 -->
+    <div class="main_4" style="border: 1px solid white;">
+        <div class="content_box_2">
+            <h1>Automated Task Management</h1>
+            <p>Eliminate manual work with intelligent automation.<br>Save
+            time on routine tasks so your team can focus on
+            innovation and growth.
+             </p>
+        </div>
+        <div class="card_2">
+        <img src="./assets/pie_chart.png" alt="" style="width: 25rem;height: 18rem; border-radius: 2rem;">
+        </div>
+    </div>
+    <!-- card-2 -->
+    <div class="main_4" style="border: 1px solid white;">
+        <div class="content_box_3" >
+            <h1>Automated Task Management</h1>
+            <p>Eliminate manual work with intelligent automation.<br>Save
+            time on routine tasks so your team can focus on
+            innovation and growth.
+            </p>
+        </div>
+        <div class="card_2">
+        <img src="./assets/bar_graph.png" alt="" style="width: 25rem;height: 18rem; border-radius: 2rem;">
+        </div>
+    </div>
+    <footer>
+        <div class="frame">
+            <div class="pannel_1">
+                <h1>NEXTGEN-AI</h1>
+                <form action="">
+                    <input type="email" name="submit" id="" placeholder="Email Address" re>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="pannel_2">
+            <h1>hello</h1>
+            </div>
+        </div>
+    <div class="end">
+        <h1>© 2025 COPYRIGHT RESEREVED | TERMS & CONDITION | PRIVACY POLICY</h1>
+    </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+    
+    <script>
+    ScrollReveal({
+    reset: true,
+    distance: '100px',
+    duration: 2000,
+    delay: 0
+    });
+
+    ScrollReveal().reveal('nav',{delay: 0 , origin: 'top'});
+    ScrollReveal().reveal('.head',{delay: 0 , origin: 'left'});
+    ScrollReveal().reveal('.content',{delay: 0 , origin: 'left'});
+    // ScrollReveal().reveal('h1',{delay: 0 , origin: 'left'});
+    ScrollReveal().reveal('.li h1 h2 h3',{delay: 0 , origin: 'left'});
+    ScrollReveal().reveal('.card',{delay: 0 , origin: 'right'});
+    ScrollReveal().reveal('.card_2',{delay: 0 , origin: 'right'});
+    ScrollReveal().reveal('.container_box_2',{delay: 0.5 , origin: 'left'});
+    ScrollReveal().reveal('.model',{delay: 0.5,origin: 'right'});
+    // ScrollReveal().reveal('p',{delay: 0.5 , origin: 'left'});
+    </script>
+</body>
+</html>

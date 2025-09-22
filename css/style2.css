@@ -1,0 +1,197 @@
+/* --- Tablet and iPad Styles (Up to 1024px) --- */
+@media (max-width: 1024px) {
+    nav ul {
+        padding-inline: 2rem; /* Reduce padding for the nav links container */
+        gap: 1rem;
+    }
+
+    .main {
+        gap: 15rem; /* Reduce the huge gap between text and model */
+        margin-top: 15vh;
+        padding-left: 2rem; /* Add some padding */
+    }
+
+    .globe {
+        right: 2rem; /* Bring model closer to the edge */
+        height: 25rem;
+        width: 25rem;
+        top: -5rem;
+    }
+    
+    .main_2, .main_4 {
+        gap: 2rem;
+        align-items: center; /* Vertically align items */
+    }
+
+    .content, .card, .content_box_2, .card_2 {
+        margin: 5vh 2rem; /* Adjust margins */
+    }
+
+    .content h1, .content_box_2 h1 {
+        font-size: 1.5rem; /* Slightly smaller headings */
+    }
+}
+
+/* --- Mobile Styles (Up to 767px) --- */
+@media (max-width: 767px) {
+    /* --- General Body & Container --- */
+    .container {
+        height: auto; /* Allow container to grow with content */
+        margin-inline: 0.5rem;
+        padding-bottom: 4rem;
+        border: none; /* Often better to remove container borders on mobile */
+    }
+    
+    /* --- Navigation --- */
+    nav {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center;
+        gap: 1.5rem;
+        margin: 1rem;
+    }
+
+    nav ul {
+        background-color: transparent;
+        padding-inline: 1rem;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap; /* Allow links to wrap on small screens */
+    }
+    nav ul a{
+        color: white;
+        border: 1px solid white;
+    }
+
+    /* --- Main Hero Section --- */
+    .main {
+        flex-direction: column-reverse; /* Show model first, then text */
+        margin-top: 4vh;
+        gap: 2rem;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .head {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center head content */
+    }
+
+    .head h1 {
+        margin-right: 0; /* Remove right margin */
+        padding-inline: 1.5rem;
+    }
+
+    .head h2 {
+        font-size: 2.5rem;
+    }
+
+    .head h3 {
+        font-size: 1.5rem;
+        margin-top: -1rem;
+    }
+
+    .buttons {
+        flex-direction: column; /* Stack buttons */
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .buttons button {
+        width: 80%;
+        padding-inline: 1rem;
+    }
+
+    /* --- Model Viewer --- */
+    .globe {
+        position: relative; /* Change from absolute to relative for mobile flow */
+        top: 0;
+        right: 0;
+        height: 300px;
+        width: 100%; /* Make it full width of its container */
+        margin-top: 2rem;
+    }
+
+    /* --- Content Sections (main_2, main_4) --- */
+    .main_2, .main_4 {
+        flex-direction: column; /* Stack content vertically */
+        margin-inline: 1rem;
+        height: auto; /* Adjust height */
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .content, .content_box_2 {
+        margin: 0; /* Reset margins for stacked layout */
+    }
+    
+    .card, .card_2 {
+        margin: 2rem auto 0 auto; /* Center the images below content */
+    }
+
+    .card img, .card_2 img {
+        max-width: 17rem;
+        max-height: 15rem; /* Optional: Limit max width on small screens */
+        height: auto;
+    }
+    
+    .main_4 {
+        border-width: 1px;
+    }
+
+    .content_box_2 {
+       margin-top: 0;
+       margin-inline: 0;
+    }
+    .content_box_3{
+        margin-top: 0;
+       margin-inline: 0;
+    }
+    
+    /* --- Bullet Points Section --- */
+    .bullet ul {
+        padding-left: 0; /* Remove default list padding */
+    }
+
+    .bullet ul li {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        margin-left: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .bullet ul li p {
+        margin-top: 0.5rem;
+    }
+    
+    /* --- Platform Section --- */
+    .main_3 {
+        text-align: center;
+        padding-inline: 1rem;
+        font-size: large;
+    }
+
+    /* --- Footer --- */
+    .frame {
+        flex-direction: column; /* Stack footer columns */
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+        margin-inline: 1rem;
+    }
+
+    form {
+        flex-direction: column; /* Stack form elements */
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+    }
+    
+    .end h1 {
+        font-size: small;
+        padding: 0 1rem;
+        text-align: center;
+    }
+}
